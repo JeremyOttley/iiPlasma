@@ -1,0 +1,71 @@
+import os.path
+import socket
+
+$PATH.append('/home/gazbit/bin')
+$DEV = $HOME +'/.workspace'
+$PROMPT = '自由 [{short_cwd}]  '
+
+#ALIASES
+##SYS
+aliases['la'] = 'ls -a'
+
+##DIR JUMPS
+aliases['work'] = 'cd $DEV'
+
+#Enable AUTO_CD
+$AUTO_CD=True
+#Enable vim_mode
+#$VI_MODE=True
+
+def _mkcd(args, stdin=None):
+    if len(args) == 1:
+        mkdir -p @(args[0])
+        cd @(args[0])
+    else:
+        return
+
+aliases['mkcd'] = _mkcd
+aliases['feh'] = 'feh -. --magick-timeout 1'
+aliases['mkdir'] = 'mkdir -p'
+aliases['rm'] = 'rm -I'
+aliases['gs'] = 'git status'
+aliases['ga'] = 'git add'
+aliases['gd'] = 'git diff'
+aliases['gch'] = 'git checkout'
+aliases['gc'] = 'git commit -v'
+
+##use emacsclient -c
+def _emacs(args, stdin=None):
+    if len(args) > 0:
+        emacsclient -t @(*args)
+    else:
+        emacsclient -c
+
+aliases['emacs'] = _emacs
+
+$BROWSER="qutebrowser"
+#$TERM="rxvt-unicode-256color"
+#$EDITOR='/usr/bin/vim'
+$SUPPRESS_BRANCH_TIMEOUT_MESSAGE = True
+
+#Encoding
+$LANG="en_US.UTF-8"
+$LC_ALL="en_US.UTF-8"
+
+#default colorscheme
+$XONSH_COLOR_STYLE='default'
+
+#keep the prompt short
+#$DYNAMIC_CWD_WIDTH = '20%'
+
+#ptk display stuff
+$COMPLETIONS_BRACKETS = False
+$COMPLETIONS_CONFIRM = True
+$AUTO_SUGGEST_IN_COMPLETIONS = False
+
+#xontrib loading
+xontrib load xonda
+xontrib load bashisms
+
+del os
+del socket
