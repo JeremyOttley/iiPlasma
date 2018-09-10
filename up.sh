@@ -61,3 +61,11 @@ chown -R $current_user ~/.rvm
 profile_location=$HOME/.bash_profile
 source $profile_location
 gem install httparty
+
+## PACKAGE LIST
+
+# notepadqq
+# kate
+# visual code studio
+# falkon/firefox-esr/google-chrome(headless?)
+# latte-dock
