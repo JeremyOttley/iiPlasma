@@ -32,6 +32,8 @@ git config --global push.default simple
 git clone https://github.com/jeremyottley/.cheatsheets.git ~/.cheatsheets
 git clone https://github.com/jeremyottley/bash-utils.git ~/.bash
 git clone https://github.com/jeremyottley/Startpages.git ~/.startpages
+git clone https://github.com/jeremyottley/.pandoc.git ~/.pandoc
+git clone https://github.com/jeremyottley/.org.git ~/.org
 
 # Wallpapers
 git clone https://github.com/jeremyottley/.wallpapers ~/.wallpapers
