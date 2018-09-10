@@ -34,6 +34,7 @@ git clone https://github.com/jeremyottley/bash-utils.git ~/.bash
 git clone https://github.com/jeremyottley/Startpages.git ~/.startpages
 git clone https://github.com/jeremyottley/.pandoc.git ~/.pandoc
 git clone https://github.com/jeremyottley/.org.git ~/.org
+sudo wget https://github.com/JeremyOttley/.Xresources.d.git ~/.Xresources.d
 
 # Wallpapers
 git clone https://github.com/jeremyottley/.wallpapers ~/.wallpapers
