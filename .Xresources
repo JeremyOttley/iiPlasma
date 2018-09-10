@@ -1,0 +1,108 @@
+!┌──────────────────────────────────────────────────────────────────────────┐
+!│▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
+!│▒▒┌─────┐░▒┌─────┐░▒┌──────────────┐░▒┌──────────────┐░▒┌──────────────┐░▒│
+!│▒▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒┌──┐▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒┌───────────┘░▒│
+!│▒▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒│░▒▒▒▒▒▒▒▒▒▒▒▒▒│
+!│▒▒│▓▒▒▒▒└──┘▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▒▒▒▒▒│░▒│▓▒┌───────────┘░▒│▓▒└───────────┐░▒│
+!│▒▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒└──┘▒▒▒▒▒│░▒│▓▒│░▒▒▒▒▒▒▒▒▒▒▒▒▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒┌┘░▒│▓▒└──────────┐░▒▒└───┐▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒└┐▒▒▒▒▒▒▒▒▒▒▒▒┌┘░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒└┐░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒│░▒▒▒▒▒▒│▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒▒│▒▒▒▒▒▒▒▒▒▒▒▒│░▒▒│▓▒▒▒▒┌──┐▓▒▒▒▒│░▒│▓▒┌──────────┘░▒▒┌─┐░│▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒┌┘▒▒▒▒▒▒▒▒▒▒▒▒└┐░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒│░▒▒▒▒▒▒▒▒▒▒▒▒▒│▓│░│▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒│░▒▒▒▒▒▒▒▒▒▒▒▒▒│▓│░│▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒┌──┐▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒└───────────┐░▒│▓└─┘▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒└─────┘░▒└─────┘░▒└─────┘░▒└─────┘░▒└──────────────┘░▒└──────────────┘░▒│
+!│▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
+!└──┐┌──┐▒┌┐▓▒▒▒▒▒▒┌───┐┌┐┌┐▓▒▒▒▒▒▒▒▒┌──┐▓▒▒┌────┐┌┐▓▒▒┌───┐▓▒▒▒▒▒▒▒┌───────┘
+!   ││  │▒│└────┐▓▒│   ││││└────┐▓▒┌─┘  │▒▒▒│    │││▓▒▒│   │▓▒▒▒▒▒▒▒│▒▒▒▒
+!   ││  │▒│     │▓▒│   ││││ ▓▒▒▒│▓▒│    │▒▒▒│     │└┐▓▒│   │▓▒▒▒▒▒▒▒│▒
+!   ││  │▒│     │┌─┘   ││││ ▓   │▓▒│    │▒▒▒│     │ │▓▒│   │▓▒▒▒▒▒▒▒│▒
+!   ││  │▒│     ││▒    ││└┘     │▓▒│    │▒┌─┘       │▓┌┘   │▓▒▒▒▒▒▒▒│
+!   ││  │▓│     ││▒    ││       │▓▒│    │▒│         │▓│    │▓▒▒▒▒▒▒▒│
+!   ││  │▓│     ││     ││   ▓   │▓▒│    └┬┘         │▓│    │▓▒▒▒▒▒▒▒│
+!   ││  └─┘     ││     └┘       │▓▒│     │          │▓│    │▓▒▒▒▒▒▒▒│
+!   ││  ┌─┐     └┘▒      ┌┐     └┬┬┘                └─┘    └┬─┬┬─┬┬┬┘
+!   ││  │▒│              ││      ││                           ││▓│││
+!   └┘  │▓│       ▓      ││       │      │           ▒      │ ││  │
+!       └─┘              └┘                                   │   │
+!   ┌┐  ┌─┐            ┌┐         │                  ▒           │
+!   └┘  │▓│       ▓    ││                                     │
+!   ┌┐  └─┘            ││                                       ▓
+!   └┘                 └┘                                     │  │
+!                                                             │
+!
+!                                                           │
+
+#include ~/.Xresources.d/space_theme
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+XTerm.vt100.faceName: Fira Mono:size=11:antialias=true
+Xft.rgba: rgb
+Xft.dpi: 96
+XTerm.termName: xterm-256color
+XTerm.vt100.locale: true
+XTerm.vt100.selectToClipboard: true
+Xcursor*theme: Adwaita
+XTerm.scaleHeight: 1.01
+Xmessage*defaultButton:            okay
+Xmessage*form.message.Scroll:      WhenNeeded
+
+*transparent:                      false
+*lineSpace:                        0
+*cursorBlink:                      true
+*cursorUnderline:                  true
+*saveLines:                        4096
+*shading:                          75
+*mouseWheelScrollPage:             false
+*pointerBlank:                     true
+*imLocale:                         en_US.utf8
+*utf8Title:                        true
+
+*xterm*metaSendsEscape:            true
+*xterm*renderFont:                 true
+*xterm*bellIsUrgent:               true
+*xterm*allowSendEvents:            false
+*xterm*sessionMgt:                 false
+*xterm*VT100*colorULMode:          on
+*xterm*VT100*colorBDMode:          off
+*xterm*VT100.titeInhibit:          off
+*xterm*VT100.translations:         #override \n Shift <Key>Home: scroll-back(4096) \n Shift <Key>End: scroll-forw(4096)
+*xterm*VT100.geometry:             80x32
+*xterm*SimpleMenu*background:      #353535
+*xterm*SimpleMenu*foreground:      #AAA
+*xterm*dynamicColors:              true
+*xterm*eightBitInput:              true
+*xterm*eightBitControl:            false
+*xterm*eightBitOutput:             true
+*xterm*trimSelection:              true
+*xterm*charClass:                  33:48,37-38:48,45-47:48,64:48,58:48,126:48,61:48,63:48,43:48,35:48
+
+XClock*foreground: #807A86
+XClock*background: #1D1C25
+XClock*width:                      350
+XClock*height:                     350
+XClock*update:                     1
+XClock*hourColor:                  cyan
+XClock*minuteColor:                cyan
+XClock*secondColor:                red
+XClock*majorColor:                 red
+XClock*minorColor:                 cyan
+
+emacs.FontBackend: x,xft
+emacs.pointerColor:         white
+emacs.scrollBarWidth:       0
+emacs.useXIM:               true
+emacs.verticalScrollBars:   false
+
+st.termname:    st-256color
+st.font:        Hasklig:size=9:hinting=full:antialias=false
+st.cwscale:     1.1
+st.chscale:     1.1
+st.bellvolume:  0
+st.borderpx:    10px
+st.letterspace: -1
