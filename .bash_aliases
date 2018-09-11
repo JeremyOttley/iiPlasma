@@ -44,3 +44,5 @@ alias git_commits_in_dates_without_author='git log --pretty=format:"%h%x09%ad%x0
 alias git_commits_in_dates_with_name_and_date='git log --pretty=format:"%ad%x09%s" > git_output.txt'
 alias gita='git archive --format=zip master > $1'
 alias gitb='git branch --sort=-committerdate | head -n 5'
+
+alias find_dead_path_items="echo $PATH | tr ':' '\n' | xargs ls -ld"
