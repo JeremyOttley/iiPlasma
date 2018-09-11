@@ -75,3 +75,11 @@ gem install httparty
 # steam
 # lutris
 # discord
+# mpv
+# spotify
+# GIMP
+# kdenlive
+# ardour
+# samba
+# torrent
+# virtualbox + vagrant
