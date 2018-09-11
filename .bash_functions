@@ -129,3 +129,8 @@ systemd-analyze blame
 systemd-analyze critical-chain
 systemd-analyze plot > plot.svg 
 }
+
+reset_submodules() {
+  git submodule foreach --recursive git clean -fdqx
+  git submodule foreach --recursive git reset --hard
+}
