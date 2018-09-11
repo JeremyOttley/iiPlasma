@@ -19,7 +19,7 @@ sudo apt-get check && sudo apt-get update && sudo apt-get autoremove --purge && 
 sudo apt-get -y install build-essential nodejs npm openjdk-8-jdk flashplugin-installer git make nmap zsh apache2 apache2-utils libapache2-mod-php curl
 sudo apt-get -y install libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
 sudo apt-get -y install libsqlite3-dev mysql-server libmysqlclient-dev autoconf automake emacs unattended-upgrades clang konsole apt-transport-https
-sudo apt-get -y install samba
+sudo apt-get -y install samba vim
 
 git config --global user.name "jeremyottley"
 git config --global user.email "jeremy.ottley@gmail.com"
