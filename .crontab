@@ -1,7 +1,7 @@
 # requires cron and postfix
 # run crontrab -e and past this:
 MAILTO=jeremy.ottley@gmail.com
-LOGFILE=/var/log/cron-pacman.log
+LOGFILE=/var/log/cron-apt.log
 
 # 1. minute (0-59)
 # |   2. hour (0-23)
