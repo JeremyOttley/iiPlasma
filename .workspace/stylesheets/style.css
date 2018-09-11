@@ -12,6 +12,108 @@
   }
 }
 
+figcaption,
+.side-note {
+  font-size: 0.8em;
+  line-height: 1.875;
+  font-style: italic;
+}
+
+.side-note {
+  border-left: 5px solid #333;
+  padding-left: 1.5rem;
+}
+
+.side-note::before {
+  content: 'Note:';
+  font-style: normal;
+  text-decoration: underline;
+  margin-right: 0.3em;
+}
+
+@media only screen and (max-width: 600px) {
+  .side-note {
+    margin-left: 1.5rem;
+  }
+}
+
+.page-content {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+
+.post > * {
+  margin-top: 0;
+  margin-bottom: 1.5rem; /* 1 */
+}
+
+@supports (display: grid) {
+  @media only screen and (min-width: 600px) {
+    .post {
+      max-width: 600px;
+      margin-right: auto;
+      margin-left: auto;
+
+      display: grid;
+      grid-column-gap: 1.5rem;
+      align-items: start;
+      grid-template-columns:
+        [full-start main-start] 3fr [main-end side-start] 1fr [side-end full-end];
+    }
+
+    /* Span the regular width */
+    .post > * {
+      grid-column: main;
+    }
+
+    /* Span the full width */
+    .post > pre,
+    .post > figure,
+    .post > blockquote,
+    .grow-to-full {
+      grid-column: full;
+    }
+
+    /*
+    Start with regular content, but span further.
+    Note for future visitors: Use :matches() here
+    */
+    .post > h1,
+    .post > h2,
+    .post > h3,
+    .post > h4,
+    .post > h5,
+    .post > h6 {
+      grid-column: main-start / full-end;
+    }
+    
+    /* Make sure, the side note can take its column */
+    .post > .has-side-note {
+      grid-column-end: main-end;
+    }
+
+    /* Additional, related content (i.e. a side note or boxout) */
+    .post > .side-note {
+      grid-column: side;
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
+    .post {
+      max-width: 1400px;
+      grid-template-columns:
+        [full-start] 1fr [main-start] 3fr [main-end side-start] 1fr [side-end full-end];
+    }
+  }
+}
+
+/*
+<main class="page-content">
+  <article class="post">
+    <p class="has-side-note">
+    <p class="side-note">
+*/
+
 .qtip {
   display: inline-block;
   position: relative;
