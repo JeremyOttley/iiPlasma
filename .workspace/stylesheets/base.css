@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,200i,400,400i,500,500i,700,700i');
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+text-rendering: optimizeLegibility;
+font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
+color: rgba(0, 0, 0, 0.8);
+text-shadow: 0 1px rgba(255, 255, 255, 0.8), 0 0 0.05em rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-size: 1.25rem;
+  line-height: 2rem;
+font-feature-settings: "liga" 1;
+    font-feature-settings: 'frac' 1;
+    font-feature-settings: 'ordn' 1;
+    font-feature-settings: 'zero' 1;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12.5%;
+    max-width: 1400px;
+    counter-reset: sidenote-counter
+}
+
+@supports (font-variant-ligatures: common-ligatures) {
+    body {
+        font-feature-settings: normal;
+        font-variant-ligatures: common-ligatures;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-variant-numeric: diagonal-fractions;
+        font-variant-numeric: ordinal;
+        font-variant-numeric: slashed-zero;
+    }
+}
+
+@media only screen and (min-width:601px) {
+    .container {
+        width: 85%
+    }
+}
+
+@media only screen and (min-width:993px) {
+    .container {
+        width: 70%
+    }
+}
