@@ -22,12 +22,12 @@ sudo apt-get -y install libsqlite3-dev mysql-server libmysqlclient-dev autoconf 
 
 git config --global user.name "jeremyottley"
 git config --global user.email "jeremy.ottley@gmail.com"
-git config --global core.autocrlf input
-git config --global core.safecrlf true
-git config --system core.editor vim
-git config --global credential.helper cache
-git config --global credential.helper 'cache --timeout=18000'
-git config --global push.default simple
+#git config --global core.autocrlf input
+#git config --global core.safecrlf true
+#git config --system core.editor vim
+#git config --global credential.helper cache
+#git config --global credential.helper 'cache --timeout=18000'
+#git config --global push.default simple
 
 git clone https://github.com/jeremyottley/.cheatsheets.git ~/.cheatsheets
 git clone https://github.com/jeremyottley/bash-utils.git ~/.bash
@@ -40,7 +40,7 @@ curl -sLf https://spacevim.org/install.sh | bash
 
 # Wallpapers
 git clone https://github.com/jeremyottley/.wallpapers ~/.wallpapers
-mv -i ~/.wallpapers/* /usr/share/wallpapers/
+sudo mv -i ~/.wallpapers/* /usr/share/wallpapers/
 rm -rf ~/.wallpapers
 
 # Fonts
