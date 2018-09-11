@@ -1,0 +1,14 @@
+.dark {
+  color: hsl(0, 0%, 17%);
+  font-weight: 700;
+}
+
+.grey {
+  color: hsl(0, 0%, 40%);
+  font-weight: 400;
+}
+
+.light-grey {
+  color: hsl(0, 0%, 45%);
+  font-weight: 400;
+}
