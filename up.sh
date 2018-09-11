@@ -50,6 +50,9 @@ sudo fc-cache -vf
 sudo wget https://gist.githubusercontent.com/JeremyOttley/b8357bffff7728c166ae9e37dc00773b/raw/6f13d036fd542eda5afbf11d86f1fef20aac0ff0/50unattended-upgrades -O /etc/apt/apt.conf.d/50unattended-upgrades
 sudo wget https://gist.githubusercontent.com/JeremyOttley/b8357bffff7728c166ae9e37dc00773b/raw/6f13d036fd542eda5afbf11d86f1fef20aac0ff0/20auto-upgrades -O /etc/apt/apt.conf.d/20auto-upgrades
 
+sudo os-prober
+sudo update-grub
+
 # RVM and ruby
 curl -sSL https://rvm.io/mpapis.asc | gpg2 --import
 curl -sSL https://get.rvm.io | bash -s stable --rails
