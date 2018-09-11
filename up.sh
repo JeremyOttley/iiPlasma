@@ -83,3 +83,4 @@ gem install httparty
 # samba
 # torrent
 # virtualbox + vagrant
+# pandoc
