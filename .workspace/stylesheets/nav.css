@@ -1,0 +1,10 @@
+.nav {
+  display: grid;
+  grid-auto-flow: row;
+}
+@media screen and (min-width: 320px) {
+  .nav {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+}
