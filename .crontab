@@ -21,3 +21,4 @@ LOGFILE=/var/log/cron-pacman.log
 @reboot rm -rf "$HOME/.thumbnails" 2>/dev/null
 @reboot rm -rf "$HOME/.local/share/Trash" 2>/dev/null
 @reboot rm -rf $HOME/.wine/drive_c/windows/temp/* 2>/dev/null
+@reboot bash $HOME/bin/cleanup_boot.sh
