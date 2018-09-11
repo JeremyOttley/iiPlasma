@@ -134,3 +134,9 @@ reset_submodules() {
   git submodule foreach --recursive git clean -fdqx
   git submodule foreach --recursive git reset --hard
 }
+
+function outdated {
+  if [ -f ./Gemfile ]; then
+    bundle outdated
+fi
+}
