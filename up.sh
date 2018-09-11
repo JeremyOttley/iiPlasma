@@ -72,3 +72,6 @@ gem install httparty
 # visual code studio
 # falkon/firefox-esr/google-chrome(headless?)
 # latte-dock
+# steam
+# lutris
+# discord
