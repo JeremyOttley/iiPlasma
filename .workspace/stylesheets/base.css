@@ -15,14 +15,7 @@
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-}
-
-html {
-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
 font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
 color: rgba(0, 0, 0, 0.8);
 text-shadow: 0 1px rgba(255, 255, 255, 0.8), 0 0 0.05em rgba(0, 0, 0, 0.5);
