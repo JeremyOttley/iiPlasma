@@ -1,0 +1,9 @@
+p.dialogue:before         { content: "\275D"; }
+p.dialogue:after          { content: "\275E"; }
+
+span.irony:after { content: "\2E46"; }
+span.lovepoint:after { content: "\2E43"; }
+span.certpoint:after { content: "\2E44"; }
+span.authpoint:after { content: "\2E45"; }
+span.accpoint:after { content: "\2E47"; }
+span.doublepoint:after { content: "\2E48"; }
