@@ -276,3 +276,14 @@ table td {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+section {margin: 1em auto; word-wrap: break-word; padding: 0 2em;}
+
+img, iframe, embed, object, video { width: 100%; }
+
+figure { display: block; padding: 1em 0; 
+				-webkit-margin-before: 0;
+				-webkit-margin-after: 0;
+				-webkit-margin-start: 0;
+				-webkit-margin-end: 0;
+				}
