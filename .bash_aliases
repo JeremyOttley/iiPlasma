@@ -38,3 +38,9 @@ alias optimize="optipng -o7 -f4 -strip all -quiet"
 
 # faster bundle
 alias bundle3="bundle install -j3"
+
+alias git_commits_in_dates_with_author='git log --pretty=format:"%h%x09%an%x09%ad%x09%s" > git_output.txt'
+alias git_commits_in_dates_without_author='git log --pretty=format:"%h%x09%ad%x09%s" > git_output.txt'
+alias git_commits_in_dates_with_name_and_date='git log --pretty=format:"%ad%x09%s" > git_output.txt'
+alias gita='git archive --format=zip master > $1'
+alias gitb='git branch --sort=-committerdate | head -n 5'
