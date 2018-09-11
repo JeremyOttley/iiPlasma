@@ -1,3 +1,17 @@
+@media only screen and (min-width: 1000px) {
+  article {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: grid;
+    grid-column-gap: 1.5rem;
+    align-items: start;
+    grid-template-columns:
+      [full-start main-start] 3fr [main-end side-start] minmax(auto, 1fr) [side-end full-end];
+  }
+}
+
 .qtip {
   display: inline-block;
   position: relative;
